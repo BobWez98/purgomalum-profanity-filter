@@ -3,6 +3,8 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/bobwez98/purgomalum-profanity-filter.svg?style=flat-square)](https://packagist.org/packages/bobwez98/purgomalum-profanity-filter)
 [![Total Downloads](https://img.shields.io/packagist/dt/bobwez98/purgomalum-profanity-filter.svg?style=flat-square)](https://packagist.org/packages/bobwez98/purgomalum-profanity-filter)
 
+Laravel Client for the https://www.purgomalum.com/ webservice.
+
 ## Installation
 
 You can install the package via composer:

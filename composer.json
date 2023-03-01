@@ -1,0 +1,25 @@
+{
+    "name": "bobwez98/purgomalum-profanity-filter",
+    "autoload": {
+        "psr-4": {
+            "Bobwez98\\ProfanityFilter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bob Wezelman",
+            "email": "bob.wezelman@hotmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bobwez98\\ProfanityFilter\\ServiceProvider"
+            ],
+            "aliases": {
+                "ProfanityFilter": "ProfanityFilter"
+            }
+        }
+    }
+}

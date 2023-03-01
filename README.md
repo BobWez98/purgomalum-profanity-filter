@@ -1,8 +1,6 @@
 # Laravel PurgoMalum Client
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/bobwez98/purgomalum-profanity-filter.svg?style=flat-square)](https://packagist.org/packages/bobwez98/purgomalum-profanity-filter)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/bobwez98/purgomalum-profanity-filter/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/bobwez98/purgomalum-profanity-filter/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/bobwez98/purgomalum-profanity-filter/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/bobwez98/purgomalum-profanity-filter/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/bobwez98/purgomalum-profanity-filter.svg?style=flat-square)](https://packagist.org/packages/bobwez98/purgomalum-profanity-filter)
 
 ## Installation

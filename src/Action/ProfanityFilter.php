@@ -8,30 +8,24 @@ use SimpleXMLElement;
 
 class ProfanityFilter
 {
-    protected string $responseType = 'xml';
-
-    protected array $responseTypes = [
-        'xml',
-        'json',
-        'plain',
-        'containsprofanity'
-    ];
-
     public function __construct(
         protected string $url = 'https://www.purgomalum.com/service'
     ) {}
 
-    public function setResponseType(string $type)
-    {
-        $this->responseType = $type;
-
-    }
-
+    /**
+     * @param string $type
+     * @return string
+     */
     protected function getUrl(string $type) : string
     {
         return $this->url . '/' . $type;
     }
 
+    /**
+     * @param string $text
+     * @param string $type
+     * @return Response
+     */
     protected function doRequest(string $text, string $type): Response
     {
         return Http::get($this->getUrl($type), [
@@ -39,6 +33,10 @@ class ProfanityFilter
         ]);
     }
 
+    /**
+     * @param string $text
+     * @return object
+     */
     public function json(string $text) : object
     {
         return json_decode(
@@ -49,6 +47,10 @@ class ProfanityFilter
         );
     }
 
+    /**
+     * @param string $text
+     * @return string
+     */
     public function plain(string $text) : string
     {
         return $this->doRequest(
@@ -57,6 +59,10 @@ class ProfanityFilter
         );
     }
 
+    /**
+     * @param string $text
+     * @return bool
+     */
     public function containsprofanity(string $text) : bool
     {
         return (bool) $this->doRequest(
@@ -65,6 +71,10 @@ class ProfanityFilter
         )->body();
     }
 
+    /**
+     * @param string $text
+     * @return SimpleXMLElement
+     */
     public function xml(string $text) : SimpleXMLElement
     {
         return simplexml_load_string(
